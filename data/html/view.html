@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Time Keeper</title>
+		<script src="../js/controller.js"></script>
+	</head>
+	<body>
+		<table>
+		<tr>
+			<td>
+				<label>Duration: </label>
+			</td>
+			<td>
+				<input type="text" id="duration" disabled size="10" value="00:00:00" />
+			</td>
+		</tr>
+		<tr>
+			<td>
+			</td>
+			<td>
+				<input type="button" id="startButton" value="Start" />
+				<input type="button" id="stopButton" value="Stop" />
+				<input type="button" id="resetButton" value="Reset" />
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<label>Notifications? </label>
+			</td>
+			<td>
+				<select id="notifyFreq">
+					<option value="0">Off</option>
+					<option value="10000">Every 10 seconds</option>
+					<option value="30000">Every 30 seconds</option>
+					<option value="60000">Every minute</option>
+					<option value="300000">Every 5 minutes</option>
+					<option value="600000">Every 10 minutes</option>
+					<option value="900000">Every 15 minutes</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<label>Audio? </label>
+			</td>
+			<td>
+				<input id="audioCheckbox" type="checkbox" />
+			</td>
+		</tr>
+	</table>
+	</body> 
+</html>
